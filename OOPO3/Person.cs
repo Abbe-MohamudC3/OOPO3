@@ -57,10 +57,10 @@ namespace OOPO3
         public double Height { get; set; }
         public double Weight { get; set; }
 
-        public override string ToString()
+       /* public override string ToString()
         {
             return $"Age: {Age},First Name: {FName},Last Name: {LName},Height: {Height},Weight: {Weight}";
-        }
+        }*/
 
 
     }

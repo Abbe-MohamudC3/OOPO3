@@ -15,7 +15,8 @@ namespace OOPO3
 
            // Console.WriteLine($" {person.Age} {person.FName} {person.LName}");
 
-           /* PersonHandler handler = new PersonHandler();
+            /*
+            PersonHandler handler = new PersonHandler();
             var personer = new List<Person>() 
             { 
                 handler.CreatePerson(23,"Anna","Kallesson", 1.65, 65),
@@ -24,15 +25,15 @@ namespace OOPO3
 
              foreach (var person in personer)
              {
-                  Console.WriteLine($"Personen " +
-                 $"{handler.GetFirstName(person)} {handler.GetLastName} är {handler.GetAge(person)} år, + " +
-                 $"{handler.GetHeight(person)} lång och väger {handler.GetWeight(person)} kg.");
+                Console.WriteLine($"Personen " +
+                $"{handler.GetFirstName(person)} {handler.GetLastName(person)} är {handler.GetAge(person)} år, + " +
+                $"{handler.GetHeight(person)} lång och väger {handler.GetWeight(person)} kg.");
              } */
 
             // F13: Vi lägger till det i classen Bird och resten ärver därifrån 
             // F14: på samma sätt i classen Animal, resten av classerna ärver
 
-
+            
             var animals = new List<Animal>();
             {
 
@@ -67,7 +68,7 @@ namespace OOPO3
 
             foreach (var animal in animals)
             {
-                Console.WriteLine(animal.Stats());
+                Console.WriteLine(animal.Stats());  
             }
 
 
