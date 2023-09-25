@@ -20,7 +20,12 @@ namespace OOPO3
         {
             return base.Stats() + $", eye colour: {EyeClour}";
         }
-
-
+        public override string ToString()
+        {
+            return $"Name: {Name}, Wingspan: {WingSpan}, Age: {Age}, Description: {Description}, Eye colour: {EyeClour}";
+        }
     }
+
+
 }
+

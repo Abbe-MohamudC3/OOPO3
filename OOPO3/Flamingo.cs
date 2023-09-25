@@ -19,6 +19,11 @@ namespace OOPO3
         {
             return base.Stats() + $", Feather colour: {FeatherClour}";
         }
+        public override string ToString()
+        {
+            return $"Name: {Name}, Wingspan: {WingSpan}, Age: {Age}, Description: {Description}, Feather colour: {FeatherClour}";
+
+        }
 
 
     }

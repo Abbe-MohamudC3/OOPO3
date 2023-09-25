@@ -26,7 +26,13 @@ namespace OOPO3
             return $"{Name}, {Age},{Description}";
         }
 
-      
+        public override string ToString()
+        {
+            return $"Name: {Name}, Age: {Age}, Description: {Description}";
+        }
+
+
+
 
     }
 }

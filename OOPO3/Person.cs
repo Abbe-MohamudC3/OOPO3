@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace OOPO3
 {
     internal class Person
     {
         private int age; 
-        private string fName;
-        private string lName;
+        private string? fName;
+        private string? lName;
         private double height { get; set; } 
         private double weight {  get; set; }
 
@@ -56,5 +57,12 @@ namespace OOPO3
         public double Height { get; set; }
         public double Weight { get; set; }
 
+        public override string ToString()
+        {
+            return $"Age: {Age},First Name: {FName},Last Name: {LName},Height: {Height},Weight: {Weight}";
+        }
+
+
     }
+
 }

@@ -25,5 +25,7 @@ namespace OOPO3
         {
             return base.Stats() + (IsPoisoness ? ", poisness" : ", not poisness");
         }
+
+
     }
 }

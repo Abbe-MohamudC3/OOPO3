@@ -25,5 +25,9 @@ namespace OOPO3
         {
             return base.Stats() + $", Length: {Length}";
         }
+        public override string ToString()
+        {
+            return $"Name: {Name}, Length: {Length}, Age: {Age}, Description: {Description}";
+        }
     }
 }

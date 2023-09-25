@@ -8,16 +8,21 @@ namespace OOPO3
 {
     internal class Swan : Bird 
     {
-        public string FeatherSize { get; set; }
+        public string TailLength { get; set; }
 
-        public Swan(string name, double whingspan, int age, string description, string feathersize) :
-            base(name, whingspan, age, description)
+        public Swan(string name, double wingspan, int age, string description, string taillength) :
+            base(name, wingspan, age, description)
         {
-            FeatherSize = feathersize;
+            TailLength = taillength;
         }
         public override string Stats()
         {
-            return base.Stats() + $", feather size: {FeatherSize}";
+            return base.Stats() + $", Tail length: {TailLength}";
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, Wingspan: {WingSpan}, Age: {Age}, Description: {Description}, Tailsize: {TailLength}";
         }
     }
 }

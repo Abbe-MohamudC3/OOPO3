@@ -26,5 +26,11 @@ namespace OOPO3
         {
             return base.Stats() + $", number of spikes: {NrOfSpikes}";
         }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, Number of spikes: {NrOfSpikes}, Age: {Age}, Description: {Description}";
+
+        }
     }
 }

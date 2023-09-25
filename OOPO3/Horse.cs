@@ -25,6 +25,11 @@ namespace OOPO3
         {
             return base.Stats() + $", colour: {Colour}";
         }
+        public override string ToString()
+        {
+            return $"Name: {Name}, Colour: {Colour}, Age: {Age}, Description: {Description}";
+
+        }
 
 
     }

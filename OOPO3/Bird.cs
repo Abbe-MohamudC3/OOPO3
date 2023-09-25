@@ -24,5 +24,11 @@ namespace OOPO3
         {
             return base.Stats() + $", Wingspan: {WingSpan}";
         }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, Wingspan: {WingSpan}, Age: {Age}, Description: {Description}";
+            
+        }
     }
 }
